@@ -1,0 +1,96 @@
+body {
+  font-family: "Kantumruy Pro", sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+}
+
+.app {
+  max-width: 420px;
+  margin: auto;
+  padding: 15px;
+}
+.app a:hover {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.188);
+  transform: translateY(-3px) scale(1.02);
+  text-decoration: underline;
+}
+.app a {
+  transition: all 0.3s ease;
+  margin: 10px auto;
+  width: 110px;
+  border-radius: 14px;
+  color: #ffff;
+  text-decoration: none;
+  padding: 7px 11px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(0, 183, 255);
+}
+h2 {
+  text-align: center;
+}
+#search:focus {
+  outline: 2.5px solid rgba(0, 119, 255, 0.29);
+}
+#search {
+  font-family: "Kantumruy Pro", sans-serif;
+  width: 94%;
+  height: 25px;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.products {
+  margin-top: 15px;
+}
+#loadMoreBtn:hover {
+  transform: translateY(-3px);
+}
+#loadMoreBtn {
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: 550;
+  font-family: "Kantumruy Pro", sans-serif;
+  cursor: pointer;
+  background-color: red;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+  color: #ffff;
+  letter-spacing: 1.5px;
+  border: none;
+  padding: 9px 13px;
+  border-radius: 40px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.29);
+}
+.product-name {
+  color: rgb(12, 114, 155);
+}
+.price {
+  animation: laon 3s linear infinite;
+  color: red;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.info {
+  flex: 1;
+}
