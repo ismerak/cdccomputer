@@ -6,7 +6,7 @@ const pageSize = 15;
 
 // 📌 Google Sheet CSV Link (Published as CSV)
 const SHEET_URL =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTlrxWsu4bchDXwiDcitxq71ZJAVmpkEeAdBvRXox9OWiDS5O1qwBetSjcFjmuRVP7FeZIF609O2n1H/pub?gid=0&single=true&output=csv";
+  "";
 
 // 🔹 Fetch data from Google Sheets on page load
 fetch(SHEET_URL)
@@ -72,3 +72,4 @@ function searchProduct() {
 document.getElementById("loadMoreBtn").addEventListener("click", () => {
   displayProducts();
 });
+
