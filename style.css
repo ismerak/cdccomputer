@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Chenla&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Koulen&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Odor+Mean+Chey&family=Outfit:wght@100..900&family=Preahvihear&family=Taprom&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chenla&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Koulen&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Odor+Mean+Chey&family=Outfit:wght@100..900&family=Preahvihear&family=Taprom&display=swap");
 body {
   font-family: "Kantumruy Pro", sans-serif;
-  background: #f4f6f8;
+  background: #e5e5e5;
   margin: 0;
 }
 
@@ -10,22 +10,28 @@ body {
   margin: auto;
   padding: 15px;
 }
-.app a:hover {
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.188);
+.link a:hover {
   transform: translateY(-3px) scale(1.02);
 }
-.app a {
-  transition: all 0.3s ease;
-  margin: 10px auto;
-  width: 110px;
-  border-radius: 14px;
-  color: #ffff;
-  text-decoration: none;
-  padding: 7px 11px;
+.link {
+  gap: 10px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  background-color: rgb(0, 183, 255);
+}
+h2 {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(110deg, rgb(0, 153, 255), rgb(0, 123, 176));
+}
+.ri-telegram-fill {
+  color: #0ba9e2;
+}
+.link a {
+  font-size: 2rem;
+  color: #0b77e2;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 h2 {
   text-align: center;
@@ -45,16 +51,22 @@ h2 {
 .products {
   margin-top: 15px;
 }
-#loadMoreBtn:hover {
-  transform: translateY(-3px);
+@keyframes maon {
+  15%,
+  25% {
+    box-shadow: 0px 5px 10px rgba(3, 130, 180, 0.284),
+      0px 5px 30px rgba(0, 183, 255, 0.613);
+    transform: scale(1.04) rotate(-2deg);
+  }
 }
 #loadMoreBtn {
+  animation: maon 3s linear infinite;
   transition: all 0.3s ease;
   font-size: 1.2rem;
   font-weight: 550;
   font-family: "Kantumruy Pro", sans-serif;
   cursor: pointer;
-  background-color: red;
+  background-color: rgb(0, 183, 255);
   display: block;
   margin: auto;
   margin-bottom: 40px;
@@ -63,13 +75,11 @@ h2 {
   border: none;
   padding: 9px 13px;
   border-radius: 40px;
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.29);
 }
 .product-name {
   color: rgb(12, 114, 155);
 }
 .price {
-  animation: laon 3s linear infinite;
   color: red;
   font-weight: 600;
   font-size: 1.1rem;
@@ -77,7 +87,7 @@ h2 {
 .card {
   background: white;
   border-radius: 12px;
-  padding: 4px;
+  padding: 10px;
   margin-bottom: 10px;
   display: flex;
   gap: 10px;
@@ -87,8 +97,6 @@ h2 {
 .card img {
   width: 80px;
   height: 80px;
-  background-position: center;
-  background-size: cover;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -96,6 +104,3 @@ h2 {
 .info {
   flex: 1;
 }
-
-
-
